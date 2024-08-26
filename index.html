@@ -1,11 +1,12 @@
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet" />
 
     <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/c0def26d1d.js" crossorigin="anonymous"></script>
@@ -15,37 +16,90 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
     <style>
-        .font-manrope{
+        .font-manrope {
             font-family: "Manrope", sans-serif;
         }
     </style>
     <title>Renterio</title>
 </head>
-<body>
+
+<body class="font-manrope">
     <!-- Header Section -->
+    <header class="mx-4 sm:mx-7 lg:mx-32">
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div
+                        class="bg-green-400 p-2 rounded-full w-8 h-8 flex justify-center items-center cursor-pointer text-black">
+                        <i class="fa-solid fa-arrow-right -rotate-45"></i>
+                    </div>
+                    <a class="p-4 cursor-pointer font-extrabold text-lg md:text-2xl">Renterio</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a>Home</a></li>
+                        <li><a>Services</a></li>
+                        <li><a>Portfolio</a></li>
+                        <li><a>Blogs</a></li>
+                        <li><a>Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <a class="bg-green-400 rounded-full hidden sm:flex btn">Book consult <div
+                            class="bg-black text-green-400 p-2 rounded-full w-8 h-8 flex justify-center items-center cursor-pointer text-black">
+                            <i class="fa-solid fa-arrow-right -rotate-45"></i>
+                        </div>
+                    </a>
+                    <div class="dropdown dropdown-end">
+                        <div tabindex="0" role="button" class="btn lg:hidden">
+                            <i class="fa-solid fa-bars text-xl text-gray-600"></i>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            <li><a>Home</a></li>
+                            <li><a>Services</a></li>
+                            <li><a>Portfolio</a></li>
+                            <li><a>Blogs</a></li>
+                            <li><a>Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
 
-
+        <!-- Banner section -->
+        <section>
+            <div class="banner-img flex justify-center">
+                <img class="w-3/4" src="images/banner.png" alt="">
+            </div>
+                <div class="hero-content text-center">
+                    <div class="w-full">
+                        <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold">A barn house of this design has a striking appearance</h1>
+                        <p class="py-6">
+                            The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.
+                        </p>
+                        <a class="bg-green-400 rounded-full w-full sm:w-auto btn">Book consult 
+                        <div
+                            class="bg-black text-green-400 p-2 rounded-full w-8 h-8 flex justify-center items-center cursor-pointer text-black">
+                            <i class="fa-solid fa-arrow-right -rotate-45"></i>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+        </section>
+    </header>
 
     <!-- Feature Section -->
 
-
-
     <!-- Work Process Section -->
-
-
 
     <!-- Portfolio Section -->
 
-
-    
     <!-- Article News Section -->
-
-
 
     <!-- Contact Section -->
 
-
-
     <!-- Footer Section -->
 </body>
+
 </html>
