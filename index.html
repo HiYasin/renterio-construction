@@ -25,7 +25,7 @@
 
 <body class="font-manrope">
     <!-- Header Section -->
-    <header class="mx-4 sm:mx-7 lg:mx-10 xl:mx-32">
+    <header class="mx-4 sm:mx-7 lg:mx-10 xl:mx-32 mt-4">
         <nav>
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
@@ -210,7 +210,7 @@
                 <a class="px-4 py-2 bg-white text-sm rounded-full font-semibold font-base text-center">
                     <i class="fa-solid fa-arrow-right text-black"></i> How we works
                 </a>
-                <h2 class="text-2xl font-bold my-2">
+                <h2 class="text-2xl font-bold my-4 md:my-8">
                     Our Works Process
                 </h2>
                 <p class="text-sm font-medium text-gray-600 my-2">
@@ -273,7 +273,7 @@
         </div>
 
         <!-- Portfolio cards -->
-        <div class="grid gap-4 grid-cols-1 sm:grid-cols-12">
+        <div class="grid gap-4 grid-cols-1 sm:grid-cols-12 mt-6">
             <!-- <div class="rounded-2xl overflow-hidden">
                 <div class="bg-no-repeat bg-center bg-cover w-full h-96 lg:h-full"
                     style="background-image: url(images/Rectangle.png);"></div>
@@ -348,25 +348,81 @@
         </div>
     </section>
 
-
-
-    <!-- Article News Section -->
-    <!-- <section class="px-4 sm:px-7 lg:px-20 xl:px-32 py-4 md:py-16 lg:py-28 bg-gray-200">
-        Article and news title
-        <div class="mt-2 lg:mt-0 max-w-xl text-center mx-auto">
+    <!-- Reviews Section (Extra section) -->
+    <section class="px-4 sm:px-7 lg:px-20 xl:px-32 py-4 md:pb-16 lg:pb-28 ">
+        <div class="mt-2 lg:mt-0 max-w-xl text-center mx-auto mb-5 md:mb-10">
             <a class="px-4 py-2 bg-lime-100 text-sm rounded-full font-semibold font-base">
-                <i class="fa-solid fa-arrow-right text-black"></i> Explore Our Latest Works
+                <i class="fa-solid fa-arrow-right text-black"></i> Reviews
             </a>
-            <h2 class="text-2xl font-bold my-6">
-                Our Latest Portfolio
-            </h2>
-            <p class="text-sm font-medium text-gray-600 my-2">
-                The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered
-                wood, sleek metal accents.
-            </p>
         </div>
-        News Cards
-    </section> -->
+        <div class="grid gap-4 grid-cols-1 lg:grid-cols-2 w-full mx-auto">
+
+            <!-- Review Content -->
+            <div class="review-content">
+                <!-- Reviews Title -->
+                <div class="text-center lg:text-left md:w-3/4 lg:w-auto mx-auto">
+                    <h2 class="text-2xl md:text-4xl font-bold text-balance mt-2">
+                        Our Successful projects and Client reviews
+                    </h2>
+                    <p class="text-sm font-medium text-gray-600 my-2">
+                        The barn house captivates with its blend of rustic charm and modern sophistication, featuring
+                        weathered wood, sleek metal accents.
+                    </p>
+                </div>
+
+                <!-- Avatar -->
+                <div class="flex justify-center lg:justify-start">
+                    <div class="avatar-group -space-x-6 rtl:space-x-reverse">
+                        <div class="avatar">
+                          <div class="w-12">
+                            <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+                          </div>
+                        </div>
+                        <div class="avatar">
+                          <div class="w-12">
+                            <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+                          </div>
+                        </div>
+                        <div class="avatar">
+                          <div class="w-12">
+                            <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+                          </div>
+                        </div>
+                        <div class="avatar placeholder">
+                          <div class="bg-neutral text-neutral-content w-12">
+                            <span>+99</span>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Review Images -->
+            <div class="carousel border-[10px] border-lime-400 rounded-[40px] sm:rounded-[60px] lg:rounded-[40px]">
+                <div id="slide1" class="carousel-item relative w-full">
+                    <img src="images/article1.png" class="w-full" />
+                    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide3" class="btn btn-circle border-none bg-lime-400">❮</a>
+                        <a href="#slide2" class="btn btn-circle border-none bg-lime-400">❯</a>
+                    </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="images/article2.png" class="" />
+                    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide1" class="btn btn-circle border-none bg-lime-400">❮</a>
+                        <a href="#slide3" class="btn btn-circle border-none bg-lime-400">❯</a>
+                    </div>
+                </div>
+                <div id="slide3" class="carousel-item relative w-full">
+                    <img src="images/article3.png" class="w-full" />
+                    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide2" class="btn btn-circle border-none bg-lime-400">❮</a>
+                        <a href="#slide1" class="btn btn-circle border-none bg-lime-400">❯</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Contact Section -->
     <section class="px-4 sm:px-7 lg:px-20 xl:px-32 py-4 sm:py-16 lg:py-28 bg-cover bg-no-repeat" style="background-image: url(images/bg.jpg);">
@@ -400,9 +456,9 @@
             </button>
         </form>
     </section>
+    
     <!-- Footer Section -->
-
-    <section class="px-4 sm:px-7 lg:px-20 xl:px-32 py-4 sm:py-16 lg:py-28 bg-[#1C1C1C] flex flex-col gap-5 md:gap-10 justify-center">
+    <section class="px-4 sm:px-7 lg:px-20 xl:px-32 py-4 sm:py-16 lg:py-20 bg-[#1C1C1C] flex flex-col gap-5 md:gap-10 justify-center">
         <div class="navbar flex justify-center mx-auto">
             <div
                 class="bg-lime-400 inline p-2 rounded-full w-8 h-8 flex justify-center items-center cursor-pointer text-black">
